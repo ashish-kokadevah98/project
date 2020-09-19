@@ -1,0 +1,301 @@
+
+
+body {
+  background: rgb(231, 170, 170);
+  display: flex;
+}
+
+img {
+  position: absolute;
+  top: 45px;
+  border-radius: 50%;
+  border: 5px solid rgb(82, 30, 30);
+  box-shadow: 0 5px 10px 0 rgb(192, 224, 116);
+}
+
+img:hover {
+  filter: grayscale(50%);
+  transform: scale(1.1);
+  top: 55px;
+}
+.edu-banner {
+    position: absolute;
+    height: 100px;
+    width: 350px;
+    background: rgba(180, 121, 110, 0.171);
+    top: 380px;
+    border-radius: 40% 5% 40% 5%;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 black, inset 0 0 5px 0 black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .edu-banner h2{
+    font-family: Lobster;
+    font-size: 2.5em;
+  }
+  
+  .edu-banner h3 {
+    font-family: Amatic SC;
+    font-size: 1.6em;
+    transform: scale(1.2);
+  }
+  
+  .edu-banner img{
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px 0 black;
+  }
+  
+  .edu-banner:hover {
+    height: 300px;
+  }
+
+.side-ban h2 {
+  position: absolute;
+  font-family: Dancing script;
+  left: 260px;
+  top: 200px;
+  font-size: 2em;
+}
+
+.side-ban h3 {
+  position: absolute;
+  font-family: Pacifico;
+  left: 200px;
+  top:700px;
+  font-size: 2.2em;
+  text-shadow: 2px 2px 10px rgb(99, 99, 2);
+}
+
+.side-ban h4 {
+  position: absolute;
+  font-family: Dancing script;
+  top: 500px;
+  left: 200px;
+  font-size: 1.8em;
+  text-align: right;
+  text-shadow: 2px 2px 8px white;
+  
+}
+
+.tag {
+  position: absolute;
+  height: 220px;
+  width: 200px;
+  background: rgba(189, 133, 133, 0.952);
+  clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
+left: 600px;
+  font-size: 1.8em;
+  text-align: center;
+  color: rgba(14, 13, 13, 0.932);
+  font-family: Amatic SC;
+  text-shadow: 2px 2px 8px black;
+}
+
+.tag:hover{
+  height: 370px;
+  width: 500px;
+  top: 20px;
+  left: 500px;
+  color: rgba(41, 41, 37, 0.904);
+}
+.fa fa-envelope {
+  font-size: 24px;
+}
+
+
+
+
+.skills {
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  background: rgba(255, 255, 0, 0.055);
+  top: 370px;
+  left: 500px;
+  border-radius: 50%;
+  box-shadow: 5px 10px 5px black, inset 0 0 5px 0 black;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.skills h2 {
+  font-family: Lobster;
+  font-size: 2em;
+}
+
+.skills:hover {
+  border-radius: 0;
+  height: 390px;
+  width: 280px;
+  font-size: 1em;
+  background: rgb(226, 154, 154);
+  color: rgb(12, 12, 12);
+  z-index: 2;
+}
+
+.b {
+  font-family: Monospace;
+  text-align: left;
+  font-size: 1.7em;
+  color: rgb(17, 17, 17);
+  list-style-type: square;
+}
+
+
+.exp {
+  position: absolute;
+  height: 80px;
+  width: 350px;
+  background: rgba(206, 145, 145, 0.486);
+  left: 1000px;
+  top: 250px;
+  text-align: center;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 15% 50%, 0% 0%);
+  animation: display 5s linear forwards;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 2;
+}
+
+.exp h2 {
+  font-family: Sigmar one;
+  font-size: 1.8em;
+  color: rgb(19, 19, 15);
+}
+
+.exp:hover {
+  height: 250px;
+  width: 500px;
+  left: 600 ion-play-state:paused;
+-webkit-animation-play-state:paused;
+}
+
+.c {
+  font-family: Amatic SC;
+  font-size: 1.em;
+  color: rgba(5, 5, 5, 0.911);
+  text-shadow: 2px 2px 8px black;
+  text-align: center;
+}
+
+
+
+@keyframes display{
+  20% {
+    transform: translateY(-40px);
+  }
+  40% {
+    transform: translateY(-80px);
+  }
+  60% {
+    transform: translateY(-120px);
+  }
+  80% {
+    transform: translateY(-160px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+.contact {
+  position: absolute;
+  height: 80px;
+  width: 180px;
+  top: 606px;
+  left: 1200px;
+  background: white;
+  transform: rotate(-4deg);
+  box-shadow: 0 3px 10px 5px black, inset 0 2px 5px 0 black;
+  animation: move 2s linear infinite;
+  text-align: center;
+  font-family: Dancing script;
+  border-radius: 0 50% 0 50%;
+  border: 2px solid black;
+}
+
+@keyframes move {
+  50%{
+    transform: rotate(4deg);
+    background: transparent;
+  }
+  100% {
+    transform: rotate(-4deg);
+  }
+}
+
+.links {
+  position: absolute;
+  height: 100px;
+  width: 250px;
+  background: rgba(194, 156, 156, 0.26);
+  top: 370px;
+  left: 1150px;
+  z-index:1;
+  text-align: center;
+  box-shadow: 0 0 20px 5px black, inset 0 0 10px 0 black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.links h1 {
+  font-family: Dancing script;
+  color: rgba(0, 0, 0, 0.788);
+  font-size: 2em;
+}
+
+.links h2 {
+  font-family: Amatic SC;
+  color: black;
+  text-align: center;
+  font-size: 2em;
+}
+
+
+.links:hover {
+  position: absolute;
+  height: 400px;
+  top: 400px;
+  background: rgba(187, 110, 110, 0.356);
+}
+
+.interest {
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  background: rgba(228, 152, 142, 0.288);
+  top: 370px;
+  left: 800px;
+  border-radius: 50%;
+  box-shadow: 5px 10px 5px black, inset 0 0 5px 0 black;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.interest h2 {
+  font-family: Lobster;
+  font-size: 2em;
+}
+
+.interest:hover {
+  height: 300px;
+  top: 400px;
+  width: 230px;
+  border-radius: 40%;
+  background: rgba(231, 145, 145, 0.062);
+  left: 800px;
+}
+
+.d {
+  font-family: Dancing Script;
+  font-size: 1.8em;
+  list-style-type: square;
+  color: rgba(8, 8, 8, 0.842);
+}
